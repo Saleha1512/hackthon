@@ -1,0 +1,141 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #2c3e50;
+}
+
+/* LOGIN PAGE */
+.login-bg {
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.login-card h1 {
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.login-card select, 
+.login-card button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.login-card button {
+  background: #2980b9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login-card button:hover {
+  background: #1a5276;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #2c3e50;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #6dd5fa;
+}
+
+.sidebar a {
+  display: block;
+  margin: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.sidebar a:hover,
+.sidebar a.active {
+  color: #6dd5fa;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2980b9;
+}
+
+/* BUTTONS */
+button {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #2980b9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #1a5276;
+}
+
+/* INPUTS */
+input, textarea, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+textarea {
+  min-height: 100px;
+}
